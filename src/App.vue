@@ -1,28 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Hotels/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Hotels from "@/components/Hotels";
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Hotels
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: KievitPro, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+@font-face {
+  font-family: 'KievitPro';
+  src: local('KievitPro'), local('KievitPro'),
+  url("~@/assets/fonts/KievitPro/KievitPro-Bold.woff") format("woff"),
+  url("~@/assets/fonts/KievitPro/KievitPro-ExtraLight.woff") format("woff"),
+  url("~@/assets/fonts/KievitPro/KievitPro-Light.woff") format("woff"),
+  url("~@/assets/fonts/KievitPro/KievitPro-Medium.woff") format("woff"),
+  url("~@/assets/fonts/KievitPro/KievitPro-Regular.woff") format("woff"),
+  url("~@/assets/fonts/KievitPro/KievitPro-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
 }
 </style>
