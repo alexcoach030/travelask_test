@@ -80,7 +80,7 @@
         <div class="hotels__empty" v-if="render.length === 0">
           <p>Записей не найдено</p>
         </div>
-        <div class="hotel" v-for="hotel in render" :key="hotel">
+        <div class="hotel" v-for="hotel in render.slice(0,6)" :key="hotel">
           <div class="hotel__image">
             <picture>
               <source type="image/webp" :srcset="require(`@/assets/${hotel.name}.webp`)">
